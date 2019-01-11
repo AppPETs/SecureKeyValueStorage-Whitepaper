@@ -1,0 +1,22 @@
+\noindent%
+\begin{sequencediagram}%
+	\newthread[white]{Client}{Client}
+	\newinst[3]{Server}{Server}
+
+	\begin{callself}{Client}{}{%
+		\shortstack[l]{%
+			$i' = \Function{H_{p}}{i}$\\
+			$c = \Function{E_{s}}{n \concat i \concat m}$
+		}
+	}
+	\end{callself}
+	\postlevel%
+	\begin{call}{Client}{$\Tuple{i',c}$}{Server}{}
+		\begin{callself}{Server}{}{%
+			\shortstack[l]{%
+				$S = \Set{\Tuple{x_1,x_2} \in S | x_1 \neq i'} \cup \Set{\Tuple{i',c}}$
+			}
+		}
+		\end{callself}
+	\end{call}
+\end{sequencediagram}

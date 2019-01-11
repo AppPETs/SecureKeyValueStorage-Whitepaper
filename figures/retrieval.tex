@@ -1,0 +1,17 @@
+\noindent%
+\begin{sequencediagram}%
+	\newthread[white]{Client}{Client}
+	\newinst[3]{Server}{Server}
+
+	\begin{callself}{Client}{}{$i' = \Function{H_{p}}{i}$}
+	\end{callself}
+	\postlevel%
+	\begin{call}{Client}{$i'$}{Server}{$\Tuple{i',c}$}
+		\begin{callself}{Server}{}{$\Tuple{i',c} \in S$}
+		\end{callself}
+	\end{call}
+	\postlevel%
+	\begin{callself}{Client}{}{$i, n, m = \Function{E_{s}^{-1}}{c}$}
+	\end{callself}
+\end{sequencediagram}
+
