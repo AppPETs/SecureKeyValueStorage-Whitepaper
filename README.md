@@ -16,4 +16,4 @@ The article can be compiled by running:
 make
 ```
 
-There are also compiled PDF files in the releases section [[Download PDF](https://github.com/AppPETs/SecretKeyValueStorage-Whitepaper/releases/download/v1.0.0/article.pdf)].
+There are also compiled PDF files in the releases section [[Download PDF](https://github.com/AppPETs/SecureKeyValueStorage-Whitepaper/releases/download/v1.0.0/SecureKeyValueStorage-Whitepaper-v1.0.0.pdf)].
